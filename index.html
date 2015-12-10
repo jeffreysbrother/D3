@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>D3 Test</title>
   </head>
   <body>
 
+    <div>I'm a lonely div.</div>
+    <div id="tree">I'm a div with id "tree".</div>
+    <div class="house">I'm the first div with class "house".</div>
+    <div class="house">I'm the second div with the class "house".</div>
+
   </body>
-  <script type="text/javascript" src="d3/d3.min.js"></script>
+  <script src="d3/d3.min.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    d3.selectAll('.house')
+      .style('color', '#fff')
+      .style('background-color', '#333');
+  </script>
 </html>
